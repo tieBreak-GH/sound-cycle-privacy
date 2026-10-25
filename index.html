@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sound Cycle – Privacy Policy</title>
+<meta name="description" content="Privacy policy for Sound Cycle, a Windows audio output switcher by Samoyed Labs. No accounts, no telemetry, everything stays on your PC.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root {
+    --bg: #f3f3f3; --surface: #ffffff; --border: #e3e3e3;
+    --text: #1b1b1b; --muted: #5c5c5c; --accent: #0f6cbd; --accent-soft: rgba(15, 108, 189, .1);
+    --code-bg: #f1f1f1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #202020; --surface: #2b2b2b; --border: #3a3a3a;
+      --text: #f2f2f2; --muted: #c5c5c5; --accent: #4cc2ff; --accent-soft: rgba(76, 194, 255, .14);
+      --code-bg: #383838;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 20px 64px; }
+  header { display: flex; align-items: center; gap: 16px; padding: 32px 0 20px; flex-wrap: wrap; }
+  header img { width: 56px; height: 56px; border-radius: 12px; }
+  .brand { flex: 1 1 220px; min-width: 0; }
+  .brand strong { display: block; font-size: 20px; font-weight: 600; }
+  .brand span { color: var(--muted); font-size: 14px; }
+  .langs { display: flex; gap: 2px; padding: 2px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+  .langs button {
+    font: inherit; font-size: 14px; font-weight: 600; color: var(--muted); background: transparent;
+    border: 0; border-radius: 6px; padding: 6px 14px; min-width: 44px; min-height: 36px; cursor: pointer;
+  }
+  .langs button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }
+  .langs button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  main { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 32px 32px; }
+  h1 { font-size: 30px; line-height: 1.25; margin: 24px 0 16px; font-weight: 600; letter-spacing: -.2px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; font-weight: 600; }
+  p { margin: 8px 0; }
+  ul { margin: 8px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  code { font: 14px/1.4 "Cascadia Mono", Consolas, monospace; background: var(--code-bg); padding: 1px 6px; border-radius: 4px; word-break: break-word; }
+  dl.meta { display: grid; grid-template-columns: max-content 1fr; gap: 4px 20px; margin: 0 0 8px; padding: 16px 0 20px; border-bottom: 1px solid var(--border); font-size: 15px; }
+  dl.meta dt { color: var(--muted); }
+  dl.meta dd { margin: 0; }
+  footer { margin-top: 24px; text-align: center; color: var(--muted); font-size: 14px; }
+  /* Without JavaScript both languages are shown, one after the other. */
+  html[data-lang="en"] .tr, html[data-lang="tr"] .en { display: none; }
+  html:not([data-lang]) .tr { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+  html:not([data-lang]) .langs { display: none; }
+  @media (max-width: 560px) {
+    main { padding: 4px 18px 24px; }
+    h1 { font-size: 25px; }
+    dl.meta { grid-template-columns: 1fr; gap: 0; }
+    dl.meta dd { margin-bottom: 8px; }
+  }
+  @media print {
+    body { background: #fff; color: #000; }
+    .langs { display: none; }
+    main { border: 0; padding: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="" width="56" height="56">
+    <div class="brand">
+      <strong>Sound Cycle</strong>
+      <span>Samoyed Labs</span>
+    </div>
+    <div class="langs" role="group" aria-label="Language / Dil">
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= English ======================= -->
+    <article class="en" lang="en">
+      <h1>Privacy Policy for Sound Cycle</h1>
+      <dl class="meta">
+        <dt>Effective Date</dt><dd>October 10, 2026</dd>
+        <dt>Last Updated</dt><dd>October 25, 2026</dd>
+        <dt>Application</dt><dd>Sound Cycle (Windows Audio Device Switcher)</dd>
+        <dt>Developer</dt><dd>Samoyed Labs</dd>
+      </dl>
+
+      <h2>1. Overview</h2>
+      <p>Sound Cycle is a lightweight Windows desktop application designed to allow users to switch audio output devices seamlessly via customizable keyboard shortcuts.</p>
+      <p>We value your privacy and believe in transparency. Sound Cycle works locally on your PC: it has no accounts, no analytics and no telemetry. The only time it communicates with an online service is when you choose to support the developer through the optional in-app purchase described in Section 4.</p>
+
+      <h2>2. Information Collection and Use</h2>
+      <ul>
+        <li><strong>No personal data collected:</strong> Sound Cycle does not collect, record, or transmit any personal information, identity details, device identifiers, or keystroke logs to the developer or to any third party.</li>
+        <li><strong>No audio recording or eavesdropping:</strong> Although Sound Cycle interacts with the Windows CoreAudio API to enumerate audio device names, change the default playback endpoint and read or set a device's volume level, <strong>it never listens to, captures, records, or analyzes any audio streams, microphone feeds, or sound data.</strong></li>
+        <li><strong>Hotkeys:</strong> Sound Cycle registers the keyboard shortcuts you configure with Windows. It only receives a notification when one of those exact shortcuts is pressed; it does not monitor or record any other key presses.</li>
+        <li><strong>No telemetry or tracking:</strong> Sound Cycle does not use telemetry, tracking cookies, advertising or analytics services. Switching devices, using hotkeys and changing settings never involve the network.</li>
+      </ul>
+
+      <h2>3. Local Data Storage</h2>
+      <p>Sound Cycle stores the following strictly locally on your computer:</p>
+      <ul>
+        <li><strong>Settings file:</strong> <code>%APPDATA%\SoundCycle\config.json</code> holds your preferences: the cycle hotkey, per-device direct hotkeys, which devices are in the cycle and their order, theme and language, on-screen display options, the "Start with Windows" choice and, if you enable "Remember volume", the last volume level used for each device.</li>
+        <li><strong>Diagnostic log:</strong> The app writes a small log file (<code>startup.log</code>, at most about 1 MB plus one rotated copy) to <code>%LOCALAPPDATA%\SoundCycle</code> (inside the app's private folder in the Microsoft Store version). It records technical events such as startup, hotkey registration results and audio device names, to help troubleshoot problems. It stays on your computer and is never sent anywhere.</li>
+        <li><strong>Start with Windows:</strong> If you enable this option, Sound Cycle registers itself with Windows to launch when you sign in (a Microsoft Store startup task, or a per-user entry in the Windows Run registry key for the portable version). You can turn it off in the app or in Windows Settings &gt; Apps &gt; Startup.</li>
+      </ul>
+      <p>These files are stored in your personal user profile, are never transmitted externally, and are removed or can be deleted at any time by uninstalling the application or deleting the folder.</p>
+
+      <h2>4. Optional In-App Purchase and External Links</h2>
+      <p>Sound Cycle is free. A "Support the Developer" window offers optional, voluntary purchases (consumable add-ons) that give the developer a tip.</p>
+      <ul>
+        <li><strong>Microsoft Store purchases:</strong> When you choose to buy one, the purchase is handled entirely by the Microsoft Store. Prices are fetched from the Microsoft Store, and payment, billing and receipts are processed by Microsoft under the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>. Sound Cycle never sees or stores your payment details, and the developer does not receive any personal data about you through this process.</li>
+        <li><strong>Web link:</strong> The "Support via Web" button opens the project's public page on GitHub in your default web browser. Once opened, that site is governed by GitHub's own privacy practices. Sound Cycle does not send any data to that page.</li>
+        <li><strong>No purchase, no connection:</strong> If you never open the support window and never press the purchase or web buttons, Sound Cycle does not contact any online service.</li>
+      </ul>
+
+      <h2>5. Third-Party Services</h2>
+      <p>Sound Cycle does not integrate with any third-party advertising, analytics, or data-sharing services. The only third-party services involved are the optional ones in Section 4: the Microsoft Store (for purchases) and GitHub (for the web link).</p>
+
+      <h2>6. Children's Privacy</h2>
+      <p>Sound Cycle does not knowingly collect any information from anyone, including children.</p>
+
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>If we make any changes to this Privacy Policy in the future, the updated version will be posted on this page and the "Last Updated" date above will be changed.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or the security of Sound Cycle, please open an issue at <a href="https://github.com/tieBreak-GH/sound-cycle-privacy/issues">github.com/tieBreak-GH/sound-cycle-privacy/issues</a>.</p>
+    </article>
+
+    <!-- ======================= Türkçe ======================= -->
+    <article class="tr" lang="tr">
+      <h1>Sound Cycle Gizlilik Politikası</h1>
+      <dl class="meta">
+        <dt>Yürürlük Tarihi</dt><dd>10 Ekim 2026</dd>
+        <dt>Son Güncelleme</dt><dd>25 Ekim 2026</dd>
+        <dt>Uygulama</dt><dd>Sound Cycle (Windows Ses Cihazı Değiştirici)</dd>
+        <dt>Geliştirici</dt><dd>Samoyed Labs</dd>
+      </dl>
+
+      <h2>1. Genel Bakış</h2>
+      <p>Sound Cycle, ses çıkış cihazları arasında özelleştirilebilir klavye kısayollarıyla kolayca geçiş yapmanızı sağlayan, hafif bir Windows masaüstü uygulamasıdır.</p>
+      <p>Gizliliğinize değer veriyor ve şeffaflığa önem veriyoruz. Sound Cycle bilgisayarınızda yerel olarak çalışır: hesap, analiz ve telemetri yoktur. Bir çevrimiçi hizmetle yalnızca, 4. bölümde anlatılan isteğe bağlı uygulama içi satın alma yoluyla geliştiriciyi desteklemeyi seçtiğinizde iletişim kurar.</p>
+
+      <h2>2. Bilgi Toplama ve Kullanım</h2>
+      <ul>
+        <li><strong>Kişisel veri toplanmaz:</strong> Sound Cycle; kişisel bilgileri, kimlik bilgilerini, cihaz tanımlayıcılarını veya tuş kayıtlarını geliştiriciye ya da herhangi bir üçüncü tarafa toplamaz, kaydetmez ve iletmez.</li>
+        <li><strong>Ses kaydı veya dinleme yoktur:</strong> Sound Cycle; ses cihazı adlarını listelemek, varsayılan oynatma cihazını değiştirmek ve bir cihazın ses seviyesini okumak ya da ayarlamak için Windows CoreAudio API'si ile çalışsa da, <strong>hiçbir ses akışını, mikrofon girişini veya ses verisini dinlemez, yakalamaz, kaydetmez ya da analiz etmez.</strong></li>
+        <li><strong>Kısayollar:</strong> Sound Cycle, yapılandırdığınız klavye kısayollarını Windows'a kaydeder. Yalnızca bu kısayollardan biri tam olarak basıldığında bildirim alır; başka hiçbir tuş basışını izlemez veya kaydetmez.</li>
+        <li><strong>Telemetri veya izleme yoktur:</strong> Sound Cycle telemetri, izleme çerezi, reklam ya da analiz hizmeti kullanmaz. Cihaz değiştirme, kısayol kullanma ve ayar değiştirme işlemleri ağı kullanmaz.</li>
+      </ul>
+
+      <h2>3. Yerel Veri Depolama</h2>
+      <p>Sound Cycle aşağıdakileri yalnızca bilgisayarınızda yerel olarak saklar:</p>
+      <ul>
+        <li><strong>Ayar dosyası:</strong> <code>%APPDATA%\SoundCycle\config.json</code> tercihlerinizi tutar: döngü kısayolu, cihaza özel doğrudan kısayollar, hangi cihazların döngüde olduğu ve sıraları, tema ve dil, ekran bildirimi seçenekleri, "Windows ile başlat" tercihi ve "Ses seviyesini hatırla"yı açtıysanız her cihaz için kullanılan son ses seviyesi.</li>
+        <li><strong>Tanı günlüğü:</strong> Uygulama, <code>%LOCALAPPDATA%\SoundCycle</code> klasörüne (Microsoft Store sürümünde uygulamanın özel klasörüne) küçük bir günlük dosyası (<code>startup.log</code>, en fazla yaklaşık 1 MB ve bir döndürülmüş kopya) yazar. Başlangıç, kısayol kayıt sonuçları ve ses cihazı adları gibi teknik olayları, sorun gidermeye yardımcı olmak için kaydeder. Bilgisayarınızda kalır ve hiçbir yere gönderilmez.</li>
+        <li><strong>Windows ile başlat:</strong> Bu seçeneği açarsanız Sound Cycle, oturum açtığınızda başlamak üzere kendini Windows'a kaydeder (Microsoft Store sürümünde bir başlangıç görevi, taşınabilir sürümde Windows Run kayıt defteri anahtarında kullanıcıya özel bir girdi). Uygulamadan ya da Windows Ayarlar &gt; Uygulamalar &gt; Başlangıç bölümünden kapatabilirsiniz.</li>
+      </ul>
+      <p>Bu dosyalar kişisel kullanıcı profilinizde saklanır, dışarıya iletilmez ve uygulamayı kaldırarak ya da klasörü silerek her zaman silinebilir.</p>
+
+      <h2>4. İsteğe Bağlı Uygulama İçi Satın Alma ve Dış Bağlantılar</h2>
+      <p>Sound Cycle ücretsizdir. "Geliştiriciyi destekle" penceresi, geliştiriciye bahşiş niteliğinde, isteğe bağlı ve gönüllü satın almalar (tüketilebilir eklentiler) sunar.</p>
+      <ul>
+        <li><strong>Microsoft Store satın almaları:</strong> Birini satın almayı seçtiğinizde işlem tamamen Microsoft Store tarafından yürütülür. Fiyatlar Microsoft Store'dan alınır; ödeme, faturalama ve makbuzlar Microsoft tarafından <a href="https://privacy.microsoft.com/privacystatement">Microsoft Gizlilik Bildirimi</a> kapsamında işlenir. Sound Cycle ödeme bilgilerinizi hiçbir zaman görmez veya saklamaz; geliştirici bu süreçte hakkınızda kişisel veri almaz.</li>
+        <li><strong>Web bağlantısı:</strong> "Web üzerinden destek ol" düğmesi, projenin GitHub'daki herkese açık sayfasını varsayılan tarayıcınızda açar. Açıldıktan sonra o site GitHub'ın kendi gizlilik uygulamalarına tabidir. Sound Cycle o sayfaya veri göndermez.</li>
+        <li><strong>Satın alma yok, bağlantı yok:</strong> Destek penceresini hiç açmazsanız ve satın alma ya da web düğmelerine basmazsanız Sound Cycle hiçbir çevrimiçi hizmetle iletişim kurmaz.</li>
+      </ul>
+
+      <h2>5. Üçüncü Taraf Hizmetler</h2>
+      <p>Sound Cycle, üçüncü taraf reklam, analiz veya veri paylaşım hizmetleriyle bütünleşmez. İlgili tek üçüncü taraf hizmetler, 4. bölümdeki isteğe bağlı olanlardır: Microsoft Store (satın almalar için) ve GitHub (web bağlantısı için).</p>
+
+      <h2>6. Çocukların Gizliliği</h2>
+      <p>Sound Cycle, çocuklar dahil kimseden bilerek herhangi bir bilgi toplamaz.</p>
+
+      <h2>7. Bu Gizlilik Politikasındaki Değişiklikler</h2>
+      <p>Bu Gizlilik Politikasında ileride bir değişiklik yaparsak güncel sürüm bu sayfada yayımlanır ve yukarıdaki "Son Güncelleme" tarihi değiştirilir.</p>
+
+      <h2>8. İletişim</h2>
+      <p>Bu Gizlilik Politikası ya da Sound Cycle'ın güvenliği hakkında sorularınız, geri bildirimleriniz veya endişeleriniz varsa lütfen <a href="https://github.com/tieBreak-GH/sound-cycle-privacy/issues">github.com/tieBreak-GH/sound-cycle-privacy/issues</a> adresinden bir konu (issue) açın.</p>
+    </article>
+  </main>
+
+  <footer>
+    <span class="en">&copy; 2026 Samoyed Labs</span>
+    <span class="tr">&copy; 2026 Samoyed Labs</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var titles = { en: "Sound Cycle – Privacy Policy", tr: "Sound Cycle – Gizlilik Politikası" };
+  var buttons = document.querySelectorAll("[data-set-lang]");
+
+  function pick() {
+    var fromUrl = (location.hash.match(/lang=(en|tr)/) || location.search.match(/lang=(en|tr)/) || [])[1];
+    if (fromUrl) return fromUrl;
+    try { var saved = localStorage.getItem("sc-lang"); if (saved === "en" || saved === "tr") return saved; } catch (e) {}
+    return /^tr\b/i.test(navigator.language || "") ? "tr" : "en";
+  }
+
+  function apply(lang, remember) {
+    root.setAttribute("data-lang", lang);
+    root.setAttribute("lang", lang);
+    document.title = titles[lang];
+    buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang)); });
+    if (remember) { try { localStorage.setItem("sc-lang", lang); } catch (e) {} }
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () { apply(b.getAttribute("data-set-lang"), true); });
+  });
+  apply(pick(), false);
+})();
+</script>
+</body>
+</html>
